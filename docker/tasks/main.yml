@@ -26,4 +26,9 @@
     user: 
       name: ubuntu 
       groups: docker  
-      append: yes 
+      append: yes
+  - name: Add jenkins user to docker group
+    user:
+      name: jenkins
+      comment: docker-jenk
+      group: docker 
